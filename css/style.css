@@ -109,9 +109,6 @@ input:focus {
 
 .site {
   overflow-x: hidden;
-  /* Unnecessary IMHO, uncomment next line to force hidden behavior */
-  /* overflow-x: hidden !important; */
-  /* Additional tunning proposed by the community */
   position: relative;
   width: 100%;
 }
@@ -168,7 +165,6 @@ input:focus {
 .submenu {
   position: absolute;
   right: 0;
-  /**white-space: nowrap;**/
   padding: 1rem 0;
   min-width: 24rem;
   opacity: 0;
@@ -348,6 +344,8 @@ input:focus {
     min-width: 54rem;
   }
 }
+
+/**Repse**/
 .fondo--blanco {
   background-color: #fff;
   margin: 0;
@@ -414,6 +412,7 @@ input:focus {
     margin-left: 0;
   }
 }
+/**Sobre**/
 .inicio__acerca {
   display: flex;
   justify-content: space-between;
@@ -434,6 +433,7 @@ input:focus {
     padding-inline: 6rem;
   }
 }
+/**Servicios**/
 .servicios__titulo--principal {
   text-align: center;
   padding-bottom: 3rem;
@@ -531,6 +531,11 @@ input:focus {
   .servicio-bg .imagen__contenido {
     padding: 18% 2rem;
   }
+.servicio__titulo {
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all 0.2s ease;
+}
 }
 @media (max-width: 550px) {
   .servicio-bg .imagen__contenido {
