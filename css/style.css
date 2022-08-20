@@ -326,12 +326,15 @@ input:focus {
     line-height: 4.8rem;
     transition: 0.2s ease;
   }
+  .landing__texto {
+    color: var(--texto);
+  }
   .landing__imagen {
     position: absolute;
     inset: 20px 0 0 0;
   }
   .landing__imagen img {
-    filter: opacity(.2);
+    filter: opacity(.3);
     height: 550px;
     width: fit-content;
     object-fit: cover;
@@ -535,6 +538,11 @@ input:focus {
     padding: 10% 2rem;
   }
 }
+@media (max-width: 480px) {
+  
+}
+
+/**Beneficios**/
 .beneficios {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -560,10 +568,12 @@ input:focus {
     padding-inline: 6rem;
   }
 }
+/**Footer/CTA**/
 .fondo--azul {
   background-color: var(--primario);
   padding-top: 14rem;
 }
+/**CTA**/
 .inicio__cta {
   display: flex;
   justify-content: space-between;
@@ -581,6 +591,7 @@ input:focus {
 .cta__texto {
   color: var(--fondo);
 }
+/**Formulario Inicio**/
 .formulario__campo {
   display: flex;
   align-items: center;
@@ -682,6 +693,7 @@ input:focus {
 .footer__direccion {
   line-height: 2.5rem;
 }
+/**Footer Bottom**/
 .footer__bottom {
   background-color: var(--secundario);
   padding: 1rem 0;
