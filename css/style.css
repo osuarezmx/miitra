@@ -383,10 +383,6 @@ input:focus {
   .repse__contenido {
     grid-template-columns: repeat(1, 1fr);
   }
-  .repse__uno,
-  .repse__dos {
-    text-align: center;
-  }
   .repse__titulo,
   .repse__texto {
     margin-bottom: 2rem;
