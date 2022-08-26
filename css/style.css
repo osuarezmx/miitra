@@ -320,6 +320,8 @@ input:focus {
   .landing__contenido {
     z-index: 3;
     margin-top: 0;
+    background-color: var(--blanco);
+    padding: 30px 35px;
   }
   .landing__titulo {
     font-size: 4.2rem;
@@ -327,17 +329,25 @@ input:focus {
     transition: 0.2s ease;
   }
   .landing__texto {
-    color: var(--texto);
+    color: var(--terciario);
   }
   .landing__imagen {
     position: absolute;
     inset: 20px 0 0 0;
   }
   .landing__imagen img {
-    filter: opacity(.3);
     height: 550px;
     width: fit-content;
     object-fit: cover;
+  }
+}
+@media (max-width: 550px) {
+  .landing__titulo {
+    font-size: 3.6rem;
+    line-height: 4rem;
+  }
+  .landing__texto {
+    font-size: 1.8rem;
   }
 }
 
@@ -1162,6 +1172,7 @@ h3.contenido__titulo {
 .whatsapp-float {
   position: fixed;
   inset: auto 0 4rem auto;
+  z-index: 4;
 }
 .whatsapp-btn i {
   background-color: var(--terciario);
